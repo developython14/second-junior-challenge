@@ -3,29 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./css/design.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  
 
   185 GB Left
   
   0 GB
   1000 GB
-  
+  <div class="parent-container">
+    <div class="card">
+      <div class="upload">
+      <div class="logo"> <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="icons">
+        <div class="one"><img src="./images/icon-document.svg" alt=""></div>
+        <div class="one"><img src="./images/icon-folder.svg" alt=""></div>
+        <div class="one"><img src="./images/icon-upload.svg" alt=""></div>
+      </div>
+    </div>
+
+      <div class="loading">
+        <div class="comp">
+        <div class="first-text"> You’ve used <b>815 GB</b> of your storage </div>
+        <progress id="file" value="81.5" max="100"> 32% </progress>
+        <div class="value-bar">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/mustapha-belkassem-9b04b116b/">BELKASSEM MUSTAPHA</a>.
   </div>
 </body>
 </html>
