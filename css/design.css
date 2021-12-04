@@ -47,6 +47,7 @@ body {
     justify-content: center;
     align-content: center;
     margin-left: 10px;
+    padding-left: 25px;
 }
 .upload .logo img {
     width: 50%;
@@ -64,8 +65,8 @@ body {
     height: 40px;
 }
 .icons .one img {
-    margin: 5px;
-    margin-bottom: 0px;
+    padding: 8px;
+    padding-bottom: 0px;
 }
 
 
@@ -78,15 +79,16 @@ body {
         /* For Firefox */
 progress::-moz-progress-bar {
     background: linear-gradient( hsl(6, 100%, 80%) ,  hsl(335, 100%, 65%));
-    width: 100%;
+    border-radius: 20px;
     }
   
         /* For Chrome or Safari */
 progress::-webkit-progress-value {
     background: linear-gradient( hsl(6, 100%, 80%) ,  hsl(335, 100%, 65%));
+    border-radius: 20px;
    
 }
-  
+
         /* For IE10 */
 progress {
     margin-top: 10px;
@@ -96,16 +98,34 @@ progress {
     background: hsl(229, 57%, 11%) ;
 }
 
+.comp::after {
+    width: 15%;
+    background-color: white;
+    color: black;
+    height: 20%;
+    content: '185 GB Left';
+    border: solid rgb(245, 242, 242);
+    position: relative;
+    left: 63%;
+    bottom: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
 .comp {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10px;
+    margin-top: 16px;
     color: white;
 }
 .value-bar{
     display: flex;
     flex-direction: row;
-    gap: 175px;
+    gap: 198px;
     margin-top: -11px;
+}
+.first-text ,.value-bar{
+    font-size: 10px;
 }
