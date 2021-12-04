@@ -98,8 +98,8 @@ progress {
     background: hsl(229, 57%, 11%) ;
 }
 
-.comp::after {
-    width: 15%;
+.mustapha {
+    width: 29%;
     background-color: white;
     color: black;
     height: 20%;
@@ -110,6 +110,15 @@ progress {
     bottom: 100px;
     padding: 10px;
     border-radius: 5px;
+}
+.mustapha::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1.375rem;
+    right: -3px;
+    border-right: 2rem solid white;
+    border-bottom: 2rem solid transparent;
 }
 
 
@@ -128,4 +137,144 @@ progress {
 }
 .first-text ,.value-bar{
     font-size: 10px;
+    color : hsl(var(--pale-blue), 0.8);
+}
+
+
+@media screen and (max-width: 375px)   {
+    .parent-container  {
+        width: 375px;
+        height: 667px;
+        background-color: hsl(243, 100%, 93%);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .card {
+        width: 375px;
+        height: 800px;
+        background-color: hsl(0, 0%, 100%);
+        margin-left: 0px;
+        margin-right: 0px;
+        top: 0px;
+        position: relative;
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .upload {
+        width: 280px;
+        background-color:  hsl(228, 56%, 26%);
+        height: 250px;
+        border-radius: 5px;
+        border-top-right-radius: 60px;
+        position: relative;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .upload .logo img {
+        width: 50%;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width:80%;
+    }
+    
+    .icons .one {
+        background:hsl(229, 57%, 11%) ;
+        border-radius: 5px;
+        height: 40px;
+    }
+    .icons .one img {
+        padding: 8px;
+        padding-bottom: 0px;
+    }
+    
+    
+    .loading {
+        background:  hsl(228, 56%, 26%);
+        width: 280px;
+        height: 200px;
+        border-radius: 5px;
+    }
+            /* For Firefox */
+    progress::-moz-progress-bar {
+        background: linear-gradient( hsl(6, 100%, 80%) ,  hsl(335, 100%, 65%));
+        border-radius: 20px;
+        }
+      
+            /* For Chrome or Safari */
+    progress::-webkit-progress-value {
+        background: linear-gradient( hsl(6, 100%, 80%) ,  hsl(335, 100%, 65%));
+        border-radius: 20px;
+       
+    }
+    
+            /* For IE10 */
+    progress {
+        margin-top: 10px;
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+        background: hsl(229, 57%, 11%) ;
+    }
+    
+    
+    
+    
+    .comp {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 16px;
+        color: white;
+    }
+    .value-bar{
+        display: flex;
+        flex-direction: row;
+        gap: 198px;
+        margin-top: -11px;
+    }
+    .first-text ,.value-bar{
+        font-size: 10px;
+    }
+    .mustapha {
+        width: 29%;
+        background-color: white;
+        color: black;
+        height: 20%;
+        content: '185 GB Left';
+        border: solid rgb(245, 242, 242);
+        position: relative;
+        left: 63%;
+        bottom: 100px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .mustapha::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0rem;
+        right: 0px;
+        border-right: 0rem solid white;
+        border-bottom: 0rem solid transparent;
+    }
+    
 }
