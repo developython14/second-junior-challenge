@@ -142,7 +142,7 @@ progress {
 }
 
 
-@media screen and (max-width: 375px)   {
+@media only screen and (max-width: 375px)  {
     .parent-container  {
         width: 375px;
         height: 667px;
