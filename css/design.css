@@ -1,6 +1,7 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Raleway&display=swap');
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 14px;
@@ -153,7 +154,7 @@ progress {
     
     .card {
         width: 375px;
-        height: 800px;
+        height: 667px;
         background-color: hsl(0, 0%, 100%);
         margin-left: 0px;
         margin-right: 0px;
@@ -171,29 +172,35 @@ progress {
     }
     
     .upload {
-        width: 280px;
+        width: 330px;
         background-color:  hsl(228, 56%, 26%);
-        height: 250px;
+        height: 180px;
         border-radius: 5px;
         border-top-right-radius: 60px;
         position: relative;
         bottom: 0px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
         justify-content: center;
         align-content: center;
-        margin-left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding-left: 0px;
+        bottom: 25px;
     }
     .upload .logo img {
-        width: 50%;
+        width:35%;
+        position: relative;
+        left: 50px;
     }
     .icons {
         display: flex;
         flex-direction: row;
         gap: 10px;
         width:80%;
+        position: relative;
+        left: 50px;
     }
     
     .icons .one {
@@ -202,17 +209,20 @@ progress {
         height: 40px;
     }
     .icons .one img {
-        padding: 8px;
+        padding: 10px;
         padding-bottom: 0px;
     }
     
     
     .loading {
         background:  hsl(228, 56%, 26%);
-        width: 280px;
-        height: 200px;
+        width: 330px;
+        height: 120px;
         border-radius: 5px;
+        position: relative;
+        bottom: 25px;
     }
+
             /* For Firefox */
     progress::-moz-progress-bar {
         background: linear-gradient( hsl(6, 100%, 80%) ,  hsl(335, 100%, 65%));
@@ -255,17 +265,24 @@ progress {
         font-size: 10px;
     }
     .mustapha {
-        width: 29%;
+        width: 69%;
         background-color: white;
         color: black;
-        height: 20%;
+        height: 50px;
         content: '185 GB Left';
         border: solid rgb(245, 242, 242);
         position: relative;
-        left: 63%;
-        bottom: 100px;
+        left: 9%;
+        bottom: 0px;
+        top: 5px;
         padding: 10px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
     }
     .mustapha::after {
         content: '';
@@ -276,5 +293,14 @@ progress {
         border-right: 0rem solid white;
         border-bottom: 0rem solid transparent;
     }
-    
+    .mustapha .a{
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif
+    }
+    .mustapha .b{
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: hsl(228, 6.7%, 56.3%);
+    }
 }
